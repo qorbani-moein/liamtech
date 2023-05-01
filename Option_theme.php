@@ -32,7 +32,7 @@ function query_page(){
   $current_page.= $_SERVER['REQUEST_URI'];    
 
   $page_home = get_site_url() . '/';
-  $services_single = 'services';
+  $services_single = 'services/';
 
   console( substr($current_page,strlen($current_page) , 1));
   if(substr($current_page,strlen($current_page)-1 , 1) == "/"){
