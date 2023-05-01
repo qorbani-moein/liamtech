@@ -32,7 +32,7 @@ function query_page(){
   $current_page.= $_SERVER['REQUEST_URI'];    
 
   $page_home = get_site_url() . '/';
-  $services_single = 'services/';
+  $services_single = $page_home . 'services/';
 
   console( substr($current_page,strlen($current_page) , 1));
   if(substr($current_page,strlen($current_page)-1 , 1) == "/"){
@@ -44,6 +44,7 @@ function query_page(){
   console("start");
   console("current_page: " . $current_page); 
   console("page_home: " . $page_home); 
+  console("services_single: " . $services_single); 
   // console("page_portfolio: " . $page_portfolio); 
 
 
