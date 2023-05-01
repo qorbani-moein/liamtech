@@ -33,6 +33,7 @@ function query_page(){
 
   $page_home = get_site_url() . '/';
   $services_single = $page_home . 'services/';
+  $product_single = $page_home . 'product/';
 
   console( substr($current_page,strlen($current_page) , 1));
   if(substr($current_page,strlen($current_page)-1 , 1) == "/"){
@@ -51,6 +52,8 @@ function query_page(){
   if ($current_page == $page_home) {
   }if ($current_page == $page_category) {
   }if ($current_page == $page_archive_portfolio) {
+  }if ($product_single == substr($current_page,0,strlen($product_single))) {
+    product_single_script();
   }if ($services_single == substr($current_page,0,strlen($services_single))) {
     services_single_script();
   }

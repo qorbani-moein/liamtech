@@ -6,8 +6,8 @@ if (!defined('ABSPATH')) {
     die('-1');
 }
 
-console("services_single");
-function services_single_script()
+console("product_single_script");
+function product_single_script()
 {
 ?>
     <script>

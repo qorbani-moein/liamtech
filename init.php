@@ -15,3 +15,4 @@ function console($txt, $key = null)
 }
 
 include_once('resource/services_single.php');
+include_once('resource/product_single.php');
