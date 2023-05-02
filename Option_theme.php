@@ -54,6 +54,7 @@ function query_page(){
   }if ($current_page == $page_archive_portfolio) {
   }if ($product_single == substr($current_page,0,strlen($product_single))) {
     product_single_script();
+    replace_txt_add_to_cart();
   }if ($services_single == substr($current_page,0,strlen($services_single))) {
     services_single_script();
   }
