@@ -15,7 +15,7 @@ function services_single_script()
 function replace_txt_add_to_cart(){
     ?>
     <script>
-        for(var i = 0 ; i <= 3 ; i++){
+        for(var i = 0 ; i <= 10 ; i++){
             document.getElementById("moein_product").innerHTML = document.getElementById("moein_product").innerHTML.replace("افزودن به سبد خرید" , "جزییات بیشتر");
         }
     </script>
