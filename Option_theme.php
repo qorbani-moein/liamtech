@@ -72,14 +72,14 @@ function header()
 {
   echo `
   <script>
-    var all_change = document.querySelectorAll("change-to-show-card").entries;
+    // var all_change = document.querySelectorAll("change-to-show-card").entries;
     
     // for(i = 0 ; i <= all_change.length -1 ; i++){
     //   item_card = all_change[i].innerHtml;
     // }
-    for(const[i , elem] of all_change.entries()){
+    // for(const[i , elem] of all_change.entries()){
       
-    }
+    // }
     
     var all_change_card_btn = document.querySelectorAll("change-to-show-card add_to_cart_button").entries;
     var all_change_card_img = document.querySelectorAll("change-to-show-card bdt-wc-product-image a");
