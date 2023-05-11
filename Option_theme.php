@@ -66,9 +66,9 @@ function query_page()
   //elseif($current_page == substr($current_page,0,strlen($page_shop_en))){
   //     script_page_shop_EnToFa();
   // }
-  header();
+  all_header();
 }
-function header()
+function all_header()
 {
   echo `
   <script>
