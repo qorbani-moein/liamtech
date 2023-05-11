@@ -70,7 +70,7 @@ function query_page()
 }
 function header()
 {
-?>
+  echo `
   <script>
     var all_change = document.querySelectorAll("change-to-show-card").entries;
     
@@ -88,7 +88,7 @@ function header()
       elem.href = all_change_card_img[i].innerHTML.href;
     }
 
-  </script>
+  </script>  
+  `;
 
-<?php
 }
