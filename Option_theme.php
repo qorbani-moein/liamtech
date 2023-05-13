@@ -70,8 +70,9 @@ function query_page()
 }
 function all_header()
 {
-  echo ` 
+  echo '
   <script>
+    console.log("all_header");
     // var all_change = document.querySelectorAll("change-to-show-card").entries;
     
     // for(i = 0 ; i <= all_change.length -1 ; i++){
@@ -81,14 +82,19 @@ function all_header()
       
     // }
     
-    var all_change_card_btn = document.querySelectorAll("change-to-show-card add_to_cart_button").entries;
-    var all_change_card_img = document.querySelectorAll("change-to-show-card bdt-wc-product-image a");
+    var all_change_card_btn = document.querySelectorAll(".change-to-show-card .add_to_cart_button");
+    var all_change_card_img = document.querySelectorAll(".change-to-show-card .bdt-wc-product-image a");
     
-    for(const[i , elem] of all_change.entries()){
-      elem.href = all_change_card_img[i].innerHTML.href;
+    for(i = 0 ; i <= all_change_card_btn.length -1 ; i++){
+      if(all_change_card_img[i].innerHTML.sreach("img") > 1 ) 
+        all_change_card_btn[i].href = all_change_card_img[i].href;
     }
 
+    // for([i , elem] of all_change_card_btn.entries()){
+    //   elem.href = all_change_card_img[i].innerHTML.href;
+    // }
+
   </script>  
-  `;
+  ';
 
 }
